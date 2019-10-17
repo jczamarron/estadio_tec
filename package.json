@@ -1,0 +1,24 @@
+{
+  "name": "estadio_tec",
+  "version": "1.0.0",
+  "description": "https://jczamarron.github.io/estadio_tec/",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jczamarron/estadio_tec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jczamarron/estadio_tec/issues"
+  },
+  "homepage": "https://github.com/jczamarron/estadio_tec#readme"
+}
