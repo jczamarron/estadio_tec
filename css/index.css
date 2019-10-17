@@ -16,9 +16,9 @@ body {
 .encabezado {
     float: left;
     color: white;
-    font-size: 75px;
+    font-size: 94px;
     font-weight: 900;
-    margin: 30px 30vh 100px 50px;
+    margin: 50px 90vh 100px 200px;
     font-family: 'poppins-semibold', 'poppins', serif;
 }
 
@@ -45,7 +45,7 @@ body {
 .conoce {
     color: lightslategray;
     font: bold;
-    font-size: 25px;
+    font-size: 65px;
     margin: 30px;
 }
 
