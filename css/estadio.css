@@ -1,3 +1,5 @@
+@import "../node_modules/bulma/css/bulma.css";
+
 .center {
     text-align: center;
 }
@@ -26,4 +28,10 @@
 
 #carousel .slide {
     display: inline-block;
+}
+
+.textbox {
+    width: 10%;
+    height: 5%;
+    margin: 10px;
 }
