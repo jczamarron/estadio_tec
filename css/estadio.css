@@ -1,0 +1,29 @@
+.center {
+    text-align: center;
+}
+
+.header {
+    color: lightslategray;
+    font: bold;
+    font-size: 65px;
+}
+
+.circle {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    margin: 5vh;
+}
+
+#carousel {
+    width: 60%;
+    height: 40vh;
+    overflow: scroll;
+    white-space:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel .slide {
+    display: inline-block;
+}
