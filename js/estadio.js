@@ -81,7 +81,7 @@ $('#registrar').click(function(){
 
     $.ajax({
         //url: 'http://localhost:3000/mail',
-        url: 'https://estadioak-api.herokuapp.com//email',
+        url: 'https://estadioak-api.herokuapp.com//mail',
         headers: {
             'Content-Type':'application/json'
         },
