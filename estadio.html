@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/estadio.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     </head>
     <body>
@@ -8,59 +10,86 @@
             <div class="center">
                 <h1 class="header">ESTADIO BORREGOS</h1>
             </div>
-            <div id="carousel" class="center">
-                <div class="slide">
-                    <img class="circle" src="./public/img/borregos-estrena-estadio.jpg">
-                </div>
-                <div class="slide">
-                    <img class="circle" src="./public/img/Estadio-borregos1920.jpg">
-                </div>
-                <div class="slide">
-                    <img class="circle" src="./public/img/estadio borregos.jpg">
-                </div>
-                <div class="slide">
-                    <img class="circle" src="./public/img/borregos.jpg">
-                </div>
-                <div class="slide">
-                    <img class="circle" src="./public/img/Captura de Pantalla 2019-10-09 a la(s) 17.16.08.png">
-                </div>
+            <div id="img-carousel" class="center">
+                <img class="circle" src="./public/img/borregos-estrena-estadio.jpg">
+                <img class="circle" src="./public/img/Estadio-borregos1920.jpg">
+                <img class="circle" src="./public/img/estadio borregos.jpg">
+                <img class="circle" src="./public/img/borregos.jpg">
+                <img class="circle" src="./public/img/Captura de Pantalla 2019-10-09 a la(s) 17.16.08.png">
             </div>
-            <h1>Historia</h1>
-            <p>
-                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
-                “Edit Text” or double click me to add your own content and make changes to the font. 
-                I’m a great place for you to tell a story and let your users know a little more about you.
-            </p>
+            <div class="hist">
+                <h1>Historia</h1>
+                <p>
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+                    “Edit Text” or double click me to add your own content and make changes to the font. 
+                    I’m a great place for you to tell a story and let your users know a little more about you.
+                </p>
+            </div>
+            
             <div class="center">
                 <h1>REGISTRA TU EVENTO</h1>
                 <div>
-                    <div>
-                        <label>Nombre del evento</label>
-                        <input class="input textbox" type="text" placeholder="Normal input">  
+                    <div class="formulario">
+                        <div class="form1">
+                            <label>Nombre</label>
+                            <input type="text" id="name">
+                            <label>Mail</label>
+                            <input type="text" id="mail">
+                            <label>Fecha Inicio</label>
+                            <input type="text" id="fi">
+                            <label>Fecha Fin</label>
+                            <input type="text" id="ff">
+                        </div>
+                        <div class="form1">
+                            <label>Hora Inicio</label>
+                            <input type="text" id="hi">
+                            <label>Hora Fin</label>
+                            <input type="text" id="hf">
+                            <label>Asistentes</label>
+                            <input type="text" id="assistants">
+                            <label>Patrocinadores</label>
+                            <input type="text" id="sponsor">
+                        </div>
                     </div>
-                    <div>
-                        <label>Nombre</label>
-                        <input class="input textbox" type="text" placeholder="Normal input">  
+                    <div class="form1">
+                        <label>Descripcion</label>
+                        <textarea name="" id="description" cols="20" rows="7"></textarea>
                     </div>
-                    <div>
-                        <label>Apellido</label>
-                        <input class="input textbox" type="text" placeholder="Normal input">  
+                    <div class="formulario">
+                        <div class="form1">
+                            <h1>Espacios Requeridos</h1>
+                            <div><input type="checkbox" id="parking" value="true"> Estacionamiento</div>
+                            <div><input type="checkbox" id="conss"> Concesiones</div>
+                            <div><input type="checkbox" id="vffl"> Vestidores futbol femenil local</div>
+                            <div><input type="checkbox" id="vffv"> Vestidores futbon femenil visitante</div>
+                            <div><input type="checkbox" id="va"> Vestidores arbitros</div>
+                            <div><input type="checkbox" id="vfav"> Vestidores futbol americano visitante</div>
+                            <div><input type="checkbox" id="ve"> Vestidor entrenadores</div>
+                            <div><input type="checkbox" id="gym"> Gimnasio</div>
+                            <div><input type="checkbox" id="ef"> Espacio Fisioterapia</div>
+                            <div><input type="checkbox" id="sb"> Sala Borregos</div>
+                            <div><input type="checkbox" id="cancha"> Cancha</div>
+                            <div><input type="checkbox" id="gp"> Gradas Poniente</div>
+                            <div><input type="checkbox" id="go"> Gradas Oriente</div>
+                            <div><input type="checkbox" id="gh"> Gradas Herradura</div>
+                            <div><input type="checkbox" id="cemex"> Terraza CEMEX</div>
+                        </div>
+                        <div class="form1">
+                            <h1>Servicios Requeridos</h1>
+                            <div><input type="checkbox" id="sound"> Sonido</div>
+                            <div><input type="checkbox" id="internet"> Internet</div>
+                            <div><input type="checkbox" id="screen"> Pantalla</div>
+                            <div><input type="checkbox" id="ticket"> Taquilla</div>
+                            <div><input type="checkbox" id="clean"> Aseo y Limpieza</div>
+                            <div><input type="checkbox" id="ill"> Iluminacion</div>
+                        </div>
                     </div>
-                    <div>
-                        <label>Email</label>
-                        <input class="input textbox" type="text" placeholder="Normal input">  
-                    </div> 
-                    <div>
-                        <label>Celular</label>
-                        <input class="input textbox" type="text" placeholder="Normal input">  
-                    </div>
-                    <div>
-                        <label>Descripcion del evento</label>
-                        <input class="input" type="text" placeholder="Normal input">  
-                    </div>
+                    <button id="registrar">Enviar</button>
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/lib/slick.js"></script>
         <script type="text/javascript" src="./js/estadio.js"></script>
     </body>
 </html>
