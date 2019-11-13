@@ -14,7 +14,7 @@ $('#registrar').click(function(){
     var hi = $('#hi').val()
     var hf = $('#hf').val()
     var assit = $('#assistants').val()
-    var patr = $('#sponsors').val()
+    var patr = $('#sponsor').val()
     var desc = $('#description').val()
     var parking = $("#parking ").is(':checked')
     var conss = $('#conss').is(':checked')
