@@ -8,6 +8,11 @@ body {
     flex-direction: column;
 }
 
+.info{
+    font-size: 2vw;
+}
+
+
 #myVideo {
     position: fixed;
     right: 0;
