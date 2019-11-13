@@ -1,13 +1,31 @@
 @import "../node_modules/bulma/css/bulma.css";
 
 body {
-    background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../public/img/fotoConoceMás.jpg");
     background-size: cover;
     background-attachment: fixed;;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -100;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 
 .intro {
     height: fit-content;
@@ -16,9 +34,9 @@ body {
 .encabezado {
     float: left;
     color: white;
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 900;
-    margin: 50px 90vh 30vh 200px;
+    margin: 50px 50vh 30vh 200px;
     font-family: 'poppins-semibold', 'poppins', serif;
 }
 

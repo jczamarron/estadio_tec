@@ -14,7 +14,7 @@ $('#registrar').click(function(){
     var hi = $('#hi').val()
     var hf = $('#hf').val()
     var assit = $('#assistants').val()
-    var patr = $('#sponsors').val()
+    var patr = $('#sponsor').val()
     var desc = $('#description').val()
     var parking = $("#parking ").is(':checked')
     var conss = $('#conss').is(':checked')
@@ -80,8 +80,8 @@ $('#registrar').click(function(){
     json_to_send = JSON.stringify(json_to_send)
 
     $.ajax({
-        //url: 'http://localhost:3000/mail',
-        url: 'https://estadioak-api.herokuapp.com/mail',
+        url: 'http://localhost:3000/mail',
+        //url: 'https://estadioak-api.herokuapp.com/mail',
         headers: {
             'Content-Type':'application/json'
         },
