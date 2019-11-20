@@ -34,6 +34,7 @@ body {
 
 .intro {
     height: fit-content;
+    background: white;
 }
 
 .encabezado {
