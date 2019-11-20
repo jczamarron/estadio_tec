@@ -50,6 +50,18 @@
 .txtinpt{
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 255, 0.1);
+    height: 4vh;
+}
+
+.txtinpt2{
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+.minf{
+    border-radius: 10px;
+    outline: none;
+    background: rgba(0, 0, 255, 0.1);
 }
 
 .form1{
