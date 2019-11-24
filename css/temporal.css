@@ -1,0 +1,105 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    color: lightslategray;
+    font: bold;
+    font-size: 65px;
+    background: white;
+}
+
+#historia {
+    margin: 5% 0 5% 0;
+}
+
+#myVideo {
+    position: relative;
+    z-index: -100;
+}
+
+#sleft {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+  
+#sright {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:70%;
+    width:100%;
+    position:absolute;
+}
+
+.experiencia{
+    height: 30vw;
+    margin: 5% 0 5% 0;
+}
+
+.expimg{
+    height: 30vw;
+    float: left;
+}
+
+.expcontent{
+    background: black;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.txtinpt{
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+    height: 4vh;
+    margin: 0 5% 0 0;
+    font-size: 18px;
+}
+
+.txtinpt2{
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+.cflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.txtinpt::placeholder{
+    font-size: 18px;
+}
+
+#descrip{
+    position: relative;
+    width: 90%;
+}
+
+#registrar {
+    width: 6vw;
+    height: 2vw;
+    margin: 1vw;
+}
+
+.req{
+    border: 2px solid red;
+}

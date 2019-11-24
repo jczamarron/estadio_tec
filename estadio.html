@@ -1,105 +1,118 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/estadio.css">
+        <link rel="stylesheet" type="text/css" href="css/temporal.css">
         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <div class="center">
                 <h1 class="header">ESTADIO BORREGOS</h1>
             </div>
-            <div id="img-carousel" class="center">
-                <img class="circle" src="./public/img/borregos-estrena-estadio.jpg">
-                <img class="circle" src="./public/img/Estadio-borregos1920.jpg">
-                <img class="circle" src="./public/img/estadio borregos.jpg">
-                <img class="circle" src="./public/img/borregos.jpg">
+            <div class="center">
+                <video id="myVideo" src="./public/img/TEC_CAMPUS_MTY.mp4" loop autoplay muted></video>
             </div>
-            <div class="hist">
-                <h1>Historia</h1>
+            <div id="historia" class="center">
+                <h1><b>Historia</b></h1>
                 <p>
-                        Ubicado en la Avenida Fernando García Roel, entre las calles Jesús Cantú Leal y Nogales, en la Colonia Tecnológico, este espacio cuenta con 15 mil 314 .74 metros cuadrados de construcción sobre una superficie de 33 mil 146.72 metros cuadrados.
+                    Ubicado en la Avenida Fernando García Roel, entre las calles Jesús Cantú Leal y Nogales, en la Colonia Tecnológico, este espacio cuenta con 15 mil 314 .74 metros cuadrados de construcción sobre una superficie de 33 mil 146.72 metros cuadrados.
                 </p>
             </div>
-            
-            <div class="center">
-                <h1><b>REGISTRA TU EVENTO</b></h1>
+            <div id="img-carousel" class="experiencia">
                 <div>
-                    <div>
-                        <div class="formularior">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.5247513700997!2d-100.28726658454529!3d25.653894119314447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfbf8f00978d%3A0xd297485a76f71c71!2sBorrego%20Sports%20Center!5e0!3m2!1sen!2smx!4v1573684820400!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                        <div class="formulario">
-                            <div class="form1">
-                                <label><b>Nombre</b></label>
-                                <input class="txtinpt" type="text" id="name" placeholder="Ingresa tu nombre">
-                                <label><b>Empresa</b></label>
-                                <input class="txtinpt" type="text" id="name" placeholder="Ingresa la empresa">
-                                <label><b>Mail</b></label>
-                                <input class="txtinpt" type="text" id="mail" placeholder="Ingresa tu mail">
-                                <label><b>Fecha Inicio</b></label>
-                                <input class="txtinpt" type="text" id="fi" placeholder="Ingresa fecha de inicio">
-                                <label><b>Fecha Fin</b></label>
-                                <input class="txtinpt" type="text" id="ff" placeholder="Ingresa fecha de fin">
-                            </div>
-                            <div class="form1">
-                                <label><b>Hora Inicio</b></label>
-                                <input class="txtinpt" type="text" id="hi" placeholder="Ingresa hora de inicio">
-                                <label><b>Hora Fin</b></label>
-                                <input class="txtinpt" type="text" id="hf" placeholder="Ingresa hora de fin">
-                                <label><b>Asistentes</b></label>
-                                <input class="txtinpt" type="text" id="assistants" placeholder="Ingresa la cantidad de participantes">
-                                <label><b>Patrocinadores</b></label>
-                                <input class="txtinpt" type="text" id="sponsor" placeholder="Ingresa los patrocinadores">
-                                <label><b>Telefono</b></label>
-                                <input class="txtinpt" type="text" id="name" placeholder="Ingresa tu telefono">
-                            </div>
-                        </div>
-                        <div class="formulario">
-                            <div class="form1">
-                                <label><b>Descripci&oacuten</b></label>
-                                <textarea class="txtinpt2" name="" id="description" cols="5" rows="7"></textarea>
-                            </div>
-                        </div>    
-                        <div class="mid">
-                            <div class="formulario">
-                                <div class="form1">
-                                    <h1><b>Espacios Requeridos</b></h1>
-                                    <div><input type="checkbox" id="cancha"> Cancha<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="cemex"> Terraza CEMEX<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="sb"> Sala Borregos<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="parking" value="true"> Estacionamiento<button class="minf">?</button></div>
-                                    <!--<div><input type="checkbox" id="conss"> Concesiones</div>
-                                    <div><input type="checkbox" id="vffl"> Vestidores futbol femenil local</div>
-                                    <div><input type="checkbox" id="vffv"> Vestidores futbon femenil visitante</div>
-                                    <div><input type="checkbox" id="va"> Vestidores arbitros</div>
-                                    <div><input type="checkbox" id="vfav"> Vestidores futbol americano visitante</div>
-                                    <div><input type="checkbox" id="ve"> Vestidor entrenadores</div>
-                                    <div><input type="checkbox" id="gym"> Gimnasio</div>
-                                    <div><input type="checkbox" id="ef"> Espacio Fisioterapia</div>-->
-                                    <!--<div><input type="checkbox" id="gp"> Gradas Poniente</div>
-                                    <div><input type="checkbox" id="go"> Gradas Oriente</div>
-                                    <div><input type="checkbox" id="gh"> Gradas Herradura</div>-->
-                                </div>
-                                <div class="form1">
-                                    <h1><b>Servicios Requeridos</b></h1>
-                                    <div><input type="checkbox" id="sound"> Sonido<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="internet"> Internet<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="screen"> Pantalla<button class="minf">?</button></div>
-                                    <div><input type="checkbox" id="ticket"> Taquilla<button class="minf">?</button></div>
-                                    <!--<div><input type="checkbox" id="clean"> Aseo y Limpieza</div>-->
-                                    <div><input type="checkbox" id="ill"> Iluminacion<button class="minf">?</button></div>
-                                </div>
-                            </div>
-                        </div>
+                    <img class="expimg" src="./public/img/borregos-estrena-estadio.jpg">
+                    <div class="expcontent">
+                        <h1>ESTADIO</h1>
+                        <p>
+                            Aqui va un texto de informacion
+                        </p>
                     </div>
                 </div>
-                <button id="registrar">Enviar</button>
+                <div>
+                    <img class="expimg" src="./public/img/Estadio-borregos1920.jpg">
+                    <div class="expcontent">
+                        <h1>ESTADIO</h1>
+                        <p>
+                            Aqui va un texto de informacion
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img class="expimg" src="./public/img/estadio borregos.jpg">
+                    <div class="expcontent">
+                        <h1>ESTADIO</h1>
+                        <p>
+                            Aqui va un texto de informacion
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img class="expimg" src="./public/img/borregos.jpg">
+                    <div class="expcontent">
+                        <h1>ESTADIO</h1>
+                        <p>
+                            Aqui va un texto de informacion
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="formulario">
+                <div id="sleft" class="center">
+                    <h1><b>COTIZA EVENTO</b></h1>
+                    <div id="sleft" class="cflex">
+                        <label><b>*Nombre</b></label>
+                        <input class="txtinpt" type="text" id="name" placeholder="Ingresa tu nombre">
+                        <label><b>*Empresa</b></label>
+                        <input class="txtinpt" type="text" id="company" placeholder="Ingresa la empresa">
+                        <label><b>*Mail</b></label>
+                        <input class="txtinpt" type="email" id="mail" placeholder="Ingresa tu mail">
+                        <label><b>Fecha Inicio</b></label>
+                        <input class="txtinpt" type="date" id="fi">
+                        <label><b>Fecha Fin</b></label>
+                        <input class="txtinpt" type="date" id="ff">
+                    </div>
+                    <div id="sright" class="cflex">
+                        <label><b>Hora Inicio (24 hrs)</b></label>
+                        <input class="txtinpt" type="time" id="hi">
+                        <label><b>Hora Fin (24 hrs)</b></label>
+                        <input class="txtinpt" type="time" id="hf">
+                        <label><b>Asistentes</b></label>
+                        <input class="txtinpt" type="number" id="assistants" placeholder="Ingresa la cantidad de participantes">
+                        <label><b>Patrocinadores</b></label>
+                        <input class="txtinpt" type="text" id="sponsor" placeholder="Ingresa los patrocinadores">
+                        <label><b>Telefono</b></label>
+                        <input class="txtinpt" type="tel" id="name" placeholder="Ingresa tu telefono">
+                    </div>
+                    <div id="descrip" class="cflex">
+                        <label><b>Descripci&oacuten</b></label>
+                        <textarea class="txtinpt2" name="" id="description" cols="5" rows="7"></textarea>
+                    </div>
+                    <div id="sleft" class="cflex">
+                        <h1><b>Espacios Requeridos</b></h1>
+                        <div><input type="checkbox" id="cancha"> Cancha<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="cemex"> Terraza CEMEX<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="sb"> Sala Borregos<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="parking" value="true"> Estacionamiento<button class="minf">?</button></div>
+                    </div>
+                    <div id="sright" class="cflex">
+                        <h1><b>Servicios Requeridos</b></h1>
+                        <div><input type="checkbox" id="sound"> Sonido<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="internet"> Internet<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="screen"> Pantalla<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="ticket"> Taquilla<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="ill"> Iluminacion<button class="minf">?</button></div>
+                    </div>
+                    <button id="registrar">Enviar</button>
+                </div>
+                <div id="sright" class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.5247513700997!2d-100.28726658454529!3d25.653894119314447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfbf8f00978d%3A0xd297485a76f71c71!2sBorrego%20Sports%20Center!5e0!3m2!1sen!2smx!4v1573684820400!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/lib/slick.js"></script>
-        <script type="text/javascript" src="./js/estadio.js"></script>
+        <script type="text/javascript" src="./js/temporal.js"></script>
     </body>
 </html>
