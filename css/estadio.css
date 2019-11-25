@@ -1,0 +1,95 @@
+.center {
+    text-align: center;
+}
+
+.header {
+    color: lightslategray;
+    font: bold;
+    font-size: 65px;
+}
+
+.circle {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    margin: 2.5vw;
+}
+
+#img-carousel {
+    width: 60%;
+    height: 15vw;
+    white-space:nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+}
+
+#carousel .slide {
+    display: inline-block;
+}
+
+.textbox {
+    width: 10%;
+    height: 5%;
+    margin: 10px;
+}
+
+.formulario{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.formularior{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 2vw;
+}
+
+.txtinpt{
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+    height: 4vh;
+}
+
+.txtinpt2{
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+.minf{
+    border-radius: 10px;
+    outline: none;
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.form1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1vw 2vw;
+    text-align: left;
+}
+
+.hist{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw 1vw 10vw;
+    text-align: left;
+}
+
+#registrar {
+    width: 6vw;
+    height: 2vw;
+    margin: 1vw;
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+}
+
+.acentr{
+    align-self: center;
+}
