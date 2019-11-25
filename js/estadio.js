@@ -1,13 +1,17 @@
-
 $('#img-carousel').slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
 });
 
+function emailIsValid (email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
 $('#registrar').click(function(){
     var nombre = $('#name').val()
+    var empresa = $('#company').val()
     var mail = $('#mail').val()
     var fi = $('#fi').val()
     var ff = $('#ff').val()
@@ -40,6 +44,7 @@ $('#registrar').click(function(){
 
     json_to_send = {
         "name": `${nombre}`,
+        "company": `${empresa}`,
         "description": `${desc}`,
         "email": `${mail}`,
         "assistants": `${assit}`,
@@ -79,21 +84,51 @@ $('#registrar').click(function(){
 
     json_to_send = JSON.stringify(json_to_send)
 
-    $.ajax({
-        //url: 'http://localhost:3000/mail',
-        url: 'https://estadioak-api.herokuapp.com/mail',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        method: 'POST',
-        dataType: 'json',
-        data: json_to_send,
-        success: function(data){
-            console.log(data)
-        },
-        error: function(error_msg){
-            console.log(error_msg);
-            var err = (error_msg.responseText)
-        }
-    })
+    if (nombre != "" && empresa != "" && emailIsValid(mail)){
+        $.ajax({
+            //url: 'http://localhost:3000/mail',
+            url: 'https://estadioak-api.herokuapp.com/mail',
+            headers: {
+                'Content-Type':'application/json'
+            },
+            method: 'POST',
+            dataType: 'json',
+            data: json_to_send,
+            success: function(data){
+                console.log(data)
+            },
+            error: function(error_msg){
+                console.log(error_msg);
+                var err = (error_msg.responseText)
+            }
+        })
+        alert("Se envio su solicitud")
+        $('#name').val("")
+        $('#company').val("")
+        $('#mail').val("")
+        $('#fi').val("")
+        $('#ff').val("")
+        $('#hi').val("")
+        $('#hf').val("")
+        $('#assistants').val("")
+        $('#sponsor').val("")
+        $('#description').val("")
+        $("#parking ").prop('checked', false)
+        $('#sb').prop('checked', false)
+        $('#cancha').prop('checked', false)
+        $('#cemex').prop('checked', false)
+        $('#sound').prop('checked', false)
+        $('#internet').prop('checked', false)
+        $('#screen').prop('checked', false)
+        $('#ticket').prop('checked', false)
+        $('#ill').prop('checked', false)
+        $("#name").removeClass("req")
+        $("#company").removeClass("req")
+        $("#mail").removeClass("req")
+    }
+    else{
+        $("#name").addClass("req")
+        $("#company").addClass("req")
+        $("#mail").addClass("req")
+    }
 })
