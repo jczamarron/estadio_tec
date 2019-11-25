@@ -21,6 +21,7 @@
 #myVideo {
     position: relative;
     z-index: -100;
+    min-width: 100%;
 }
 
 #sleft {
@@ -102,4 +103,10 @@
 
 .req{
     border: 2px solid red;
+}
+
+.estadiovideo{
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
 }
