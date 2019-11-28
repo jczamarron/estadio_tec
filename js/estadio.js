@@ -1,9 +1,4 @@
-$('#img-carousel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
+$('#img-carousel').slick();
 
 function emailIsValid (email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
