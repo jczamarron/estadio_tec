@@ -72,10 +72,28 @@ body {
 }
 
 .circle {
-    height: 40vh;
-    width: 40vh;
+    height: 20vw;
+    width: 20vw;
     border-radius: 50%;
-    margin: 5vh;
+}
+
+.cflex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.rflex{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.locname{
+    width: 10%;
 }
 
 /* Add a black background color to the top navigation */
