@@ -1,1 +1,99 @@
-<h1>Auditorio</h1>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/estadio.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html"><img class="img opt" src="./public/img/logo-tec-negro.png"></a>
+            <a class="opt" href="index.html#loc">LOCACIONES</a>
+            <a class="opt" href="experiencias.html">EXPERIENCIAS TEC</a>
+            <a class="opt" href="#formulario">COTIZAR</a>
+            <a class="opt" href="">CONTACTO</a>
+        </div>
+        <div class="container">
+            <div class="center">
+                <h1 class="header">AUDITORIO LUIS ELIZONDO</h1>
+            </div>
+        </div>
+        <div class="estadiovideo">
+            <video id="myVideo" src="./public/img/estadio.mp4" loop autoplay muted></video>
+        </div>
+        <div class="container">
+            <div id="historia" class="center">
+                <h1><b>Historia</b></h1>
+                <p>
+                    El Auditorio Luis Elizondo, inaugurado en 1980 gracias a la contribución 
+                    del filántropo regiomontano Don Luis Elizondo, es un inmueble diseñado 
+                    para ser sede de grandes espectáculos artísticos como obras de teatro, 
+                    musicales y otros tipos de eventos. 
+                </p>
+            </div>
+            <h1 class="center galeria"><b>GALERIA</b></h1>
+            <div id="img-carousel" class="experiencia">
+                <img class="expimg" src="./public/img/borregos-estrena-estadio.jpg">
+                <img class="expimg" src="./public/img/Estadio-borregos1920.jpg">
+                <img class="expimg" src="./public/img/estadio borregos.jpg">
+                <img class="expimg" src="./public/img/borregos.jpg">
+            </div>
+            <div id="formulario">
+                <div id="sleft" class="center">
+                    <h1><b>COTIZA EVENTO</b></h1>
+                    <div id="sleft" class="cflex">
+                        <label><b>*Nombre</b></label>
+                        <input class="txtinpt" type="text" id="name" placeholder="Ingresa tu nombre">
+                        <label><b>*Empresa</b></label>
+                        <input class="txtinpt" type="text" id="company" placeholder="Ingresa la empresa">
+                        <label><b>*Mail</b></label>
+                        <input class="txtinpt" type="email" id="mail" placeholder="Ingresa tu mail">
+                        <label><b>Fecha Inicio</b></label>
+                        <input class="txtinpt" type="date" id="fi">
+                        <label><b>Fecha Fin</b></label>
+                        <input class="txtinpt" type="date" id="ff">
+                    </div>
+                    <div id="sright" class="cflex">
+                        <label><b>Hora Inicio (24 hrs)</b></label>
+                        <input class="txtinpt" type="time" id="hi">
+                        <label><b>Hora Fin (24 hrs)</b></label>
+                        <input class="txtinpt" type="time" id="hf">
+                        <label><b>Asistentes</b></label>
+                        <input class="txtinpt" type="number" id="assistants" placeholder="Ingresa la cantidad de participantes">
+                        <label><b>Patrocinadores</b></label>
+                        <input class="txtinpt" type="text" id="sponsor" placeholder="Ingresa los patrocinadores">
+                        <label><b>Telefono</b></label>
+                        <input class="txtinpt" type="tel" id="name" placeholder="Ingresa tu telefono">
+                    </div>
+                    <div id="descrip" class="cflex">
+                        <label><b>Descripci&oacuten</b></label>
+                        <textarea class="txtinpt2" name="" id="description" cols="5" rows="7"></textarea>
+                    </div>
+                    <div id="sleft" class="cflex">
+                        <h1><b>Espacios Requeridos</b></h1>
+                        <div><input type="checkbox" id="cancha"> Cancha<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="cemex"> Terraza CEMEX<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="sb"> Sala Borregos<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="parking" value="true"> Estacionamiento<button class="minf">?</button></div>
+                    </div>
+                    <div id="sright" class="cflex">
+                        <h1><b>Servicios Requeridos</b></h1>
+                        <div><input type="checkbox" id="sound"> Sonido<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="internet"> Internet<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="screen"> Pantalla<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="ticket"> Taquilla<button class="minf">?</button></div>
+                        <div><input type="checkbox" id="ill"> Iluminacion<button class="minf">?</button></div>
+                    </div>
+                    <button id="registrar">Enviar</button>
+                </div>
+                <div id="sright" class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.6281188090757!2d-100.2911352413466!3d25.650465187996087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfbedae7c8a9%3A0x25ff350b1a25aa23!2sAuditorio%20Luis%20Elizondo%20del%20Tecnol%C3%B3gico%20de%20Monterrey!5e0!3m2!1sen!2smx!4v1575914697653!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/lib/slick.js"></script>
+        <script type="text/javascript" src="./js/estadio.js"></script>
+    </body>
+</html>
